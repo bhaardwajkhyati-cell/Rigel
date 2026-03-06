@@ -39,6 +39,33 @@ body{
   margin-top:4px;
 }
 
+.desktop{
+  position:absolute;
+  width:480px;
+  left:50%;
+  bottom:250px;
+  transform:translateX(-50%);
+  z-index:3;
+}
+
+.comp-screen{
+  position:absolute;
+  width:430px;
+  height: 215px;
+  left:36%;
+  bottom:370px;
+}
+
+.keyboard{
+  position:absolute;
+  width:500px;
+  height: 180px;
+  left:50%;
+  bottom:125px;
+  transform:translateX(-50%);
+  z-index:3;
+}
+
 .photoframe{
   position: absolute;
   width: 15%;

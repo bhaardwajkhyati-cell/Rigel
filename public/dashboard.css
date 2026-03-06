@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: white;
+  font-family: Cambria, Georgia, Times, serif;
+
+  background-image: url(/images/desk.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.clock{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  font-family:'Segoe UI', sans-serif;
+  color:white;
+  background:rgba(0,0,0,0.35);
+  padding:12px 28px;
+  border-radius:14px;
+  backdrop-filter:blur(10px);
+}
+  
+#time{
+  font-size:36px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+  
+#date{
+  font-size:16px;
+  opacity:0.85;
+  margin-top:4px;
+}
+
+.photoframe{
+  position: absolute;
+  width: 15%;
+  top: 8vh;
+  left: 10vw;
+}
+
+.frame{
+  position: absolute;
+  width: 100%;
+}
+
+.photo{
+  position: absolute;
+  width: 85%;
+  margin: 15px 15px;
+  border-radius: 3px;
+}

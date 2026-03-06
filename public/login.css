@@ -16,7 +16,7 @@ body{
 }
 
 .box{
-  margin: 10% auto;
+  margin: auto;
   width: 500px;
   display: flex;
   flex-direction: column;

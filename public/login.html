@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/SignUp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      color: white;
+      font-family: Cambria, Georgia, Times, serif;
+      background-image: url('./images/background-login.png');
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .box {
+      margin: 8% auto;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.4); /* frosted glass effect */
+      backdrop-filter: blur(10px);
+    }
+
+    @media(max-width: 500px) {
+      .box {
+        width: 85%;
+      }
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      max-width: 80%;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-input {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .form-input i {
+      color: #fff;
+    }
+
+    .detail-text {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+    }
+
+    .detail-text::placeholder {
+      color: #ddd;
+    }
+
+    button {
+      padding: 12px;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+
+    .mid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .mid a {
+      color: #00f2fe;
+      text-decoration: none;
+    }
+
+    .mid a:hover {
+      text-decoration: underline;
+    }
+
+    .lower {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .lower a {
+      color: #4facfe;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .lower a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <aside class="box">
+    <header>
+      <img class="logo" src="./images/Regile-logo.png" alt="RIGEL-logo">
+      <p>Enter Your Digital World</p>
+    </header>
+    <main>
+  <form class="form" method="POST" action="/login">
+  <div class="form-input">
+    <i class="fa-solid fa-user"></i>
+    <input type="text" name="email" placeholder="Email" required class="detail-text" />
+  </div>
+  <div class="form-input">
+    <i class="fa-solid fa-lock"></i>
+    <input type="password" name="password" placeholder="Password" required class="detail-text" />
+  </div>
+  <button type="submit">Access My Space</button>
+</form>
+    </main>
+  </aside>
+</body>
+</html>

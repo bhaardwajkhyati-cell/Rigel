@@ -66,6 +66,15 @@ body{
   z-index:3;
 }
 
+.mouse{
+  position:absolute;
+  width:200px;
+  height: 70px;
+  left:71%;
+  bottom:180px;
+  transform:translateX(-50%);
+  z-index:3;
+}
 .photoframe{
   position: absolute;
   width: 15%;
